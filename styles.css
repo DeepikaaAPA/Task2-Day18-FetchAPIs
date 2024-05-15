@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+
+  height: 100vh;
+}
+nav {
+  background-color: rgb(154, 149, 149);
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+.nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: white;
+  padding-block: 2rem;
+  font-size: 17px;
+  font-weight: 900;
+  text-transform: capitalize;
+  border:0;
+}
+
+.nav-list li {
+  background-color: inherit;
+  padding: 20px;
+  margin-left: 1rem;
+  border-radius: 30px 0px 0px 30px;
+  cursor: pointer;
+}
+.sub-nav li {
+  background-color: rgb(34, 109, 141);
+  padding: 1rem;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 10px;
+  text-transform: capitalize;
+}
+
+.nav-list li.active {
+  background-color: rgb(53, 199, 136);
+}
+.nav-list  li:hover {
+  font-size: 19px;
+  text-decoration: underline;
+  /* border:solid 2px rgb(113, 228, 178);
+   border-radius: 20px;  */
+}
+.sub-nav .active,
+.sub-nav > li:hover {
+  background-color: beige;
+  color: black;
+  font-size: 16px;
+  
+}
+.nav-list {
+  color: white;
+  text-decoration: none;
+}
+.layout {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  column-gap: 2rem;
+}
+.sub-nav {
+  position: relative;
+  top: 22px;
+
+  background-color: rgb(53, 199, 136);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  color: white;
+  text-align: center;
+  border-style: solid;
+  border-color: grey;
+  border-left: none;
+  border-width: 10px;
+  border-radius: 0px 10px 10px 0px;
+  font-size: 13px;
+  font-weight: 100;
+}
+.images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5%;
+  height: 500px;
+  margin: 30px;
+}
+.images > img {
+  max-height: 200px;
+  max-width: 200px;
+  object-fit: contain;
+  border: solid 5px rgb(224, 220, 220);
+  border-radius: 20px;
+}
+h1 {
+  text-align: center;
+  box-shadow: 2px 2px 2px 0.5;
+  color: rgb(26, 214, 157);
+  padding: 10px;
+  margin: 20px;
+  border-radius: 10px;
+  text-transform: capitalize;
+}
